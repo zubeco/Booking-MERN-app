@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
+import Logo from "../Logo/Logo";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <Link to="/" style={{color: "white", textDecoration: "none"}}>
-          <span className="logo">bookBay</span>
-        </Link>
+        <Logo color="white" />
         <div className="navItems">
           <button className="navButton reg">Register</button>
           <button className="navButton sign">Sign in</button>

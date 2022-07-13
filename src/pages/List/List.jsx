@@ -8,6 +8,8 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import SearchItem from "../../components/SearchItem/SearchItem";
+import MailList from "../../components/MailList/MailList";
+import Footer from "../../components/Footer/Footer";
 
 const List = () => {
   const location = useLocation();
@@ -30,10 +32,13 @@ const List = () => {
             </div>
             <div className="listItem">
               <label>Check-in Date</label>
-              <span className="listCalender" onClick={() => setOpenDate(!openDate)}>{`${format(
-                date[0].startDate,
+              <span
+                className="listCalender"
+                onClick={() => setOpenDate(!openDate)}
+              >{`${format(date[0].startDate, "MM•dd•yy")} - ${format(
+                date[0].endDate,
                 "MM•dd•yy"
-              )} - ${format(date[0].endDate, "MM•dd•yy")} `}</span>
+              )} `}</span>
               {openDate && (
                 <DateRange
                   editableDateInputs={true}
@@ -64,7 +69,7 @@ const List = () => {
                   <input
                     type="number"
                     className="listOptionInput"
-                    placeholder={options.adult}
+                    placeholder={options.Adult}
                     min={1}
                   />
                 </div>
@@ -73,7 +78,7 @@ const List = () => {
                   <input
                     type="number"
                     className="listOptionInput"
-                    placeholder={options.children}
+                    placeholder={options.Children}
                     min={0}
                   />
                 </div>
@@ -82,7 +87,7 @@ const List = () => {
                   <input
                     type="number"
                     className="listOptionInput"
-                    placeholder={options.room}
+                    placeholder={options.Room}
                     min={1}
                   />
                 </div>
@@ -100,6 +105,10 @@ const List = () => {
             <SearchItem />
           </div>
         </div>
+      </div>
+      <MailList />
+      <div className="listFooter">
+        <Footer />
       </div>
     </div>
   );
