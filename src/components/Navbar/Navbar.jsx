@@ -8,8 +8,18 @@ const Navbar = () => {
       <div className="navContainer">
         <Logo color="white" />
         <div className="navItems">
-          <button className="navButton reg">Register</button>
-          <button className="navButton sign">Sign in</button>
+          <Link
+            to="/register"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <button className="navButton reg">Register</button>{" "}
+          </Link>
+          <Link
+            to="/login"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <button className="navButton sign">Sign in</button>
+          </Link>
         </div>
       </div>
     </div>

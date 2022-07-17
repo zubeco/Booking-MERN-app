@@ -1,0 +1,119 @@
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.accessWrapper {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.accessWrapper > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #383838;
+  padding-bottom: 30px;
+}
+
+.accessWrapper > label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #262626;
+  padding-bottom: 5px;
+}
+
+.accessWrapper > input {
+  height: 30px;
+  outline: none;
+  color: #262626;
+  margin-bottom: 12px;
+  padding: 4px 8px;
+}
+
+.accessWrapper > button {
+  padding: 8px 16px;
+  min-height: 48px;
+  min-width: 48px;
+  background-color: #001e6c;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.accessOptions {
+  margin-bottom: 20px;
+}
+
+.accessOptions > p {
+  color: #383838;
+  font-size: 14px;
+}
+
+.optionIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.accessIcons {
+  border: 0.5px solid #383838;
+  font-size: 23px;
+  padding: 23px;
+  cursor: pointer;
+}
+
+.accessFooter {
+  font-size: 12px;
+  text-align: center;
+}
+
+.accessFooter > p {
+  padding: 10px 0;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+.rights {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.terms {
+  color: #0071c2;
+}
+
+.line {
+  width: 100px;
+  height: 0;
+  border: 0.5px solid #dadada;
+  margin: 3px;
+  display: inline-block;
+}
+
+.longLine {
+  width: 100%;
+  height: 0;
+  border: 0.5px solid #dadada;
+  margin: 3px;
+  display: inline-block;
+}
+
+.accessOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
